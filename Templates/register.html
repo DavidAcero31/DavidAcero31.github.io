@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.::REGISTRO::.</title>
+    <link rel="stylesheet" href="/CSS/register.css">
+</head>
+<body background="/Resources/Img/2.jpg">
+  <div class="container">
+    <div>
+      <form id="formreg" action="#">
+        <h2>Iniciar Sesión</h2>
+        <h5>Es rápido y fácil...</h5>
+
+          <div class="box">
+            <label>N-Identificacion</label>
+            <input id="IdentR" type="text" required />
+          </div>
+          <div class="input-box animation" style="--i: 18; --j: 1">
+            <label>Nombre completo</label>
+            <input id="Nom_usuarioR" type="text" required />
+          </div>
+          <div class="input-box animation" style="--i: 18; --j: 1">
+            <label>Fecha de Nacimiento</label>
+            <input id="RHR" type="text" required />
+          </div>
+          <div class="input-box animation" style="--i: 18; --j: 1">
+            <label>Direccion</label>
+            <input id="DireccionR" type="text" required />
+          </div>
+          <div class="input-box animation" style="--i: 18; --j: 1">
+            <label>N°Telefonico</label>
+            <input id="telefono" type="text" required />
+          </div>
+          <div class="input-box animation" style="--i: 18; --j: 1">
+            <label for="sel1" class="form-label">Selecciones su rol:</label>
+          </div>
+
+          <div>
+            <select class="form-select boton" id="Rol" name="sellist1">
+              <option>Administrador</option>
+              <option>Usuario</option>
+            </select>
+            
+          </div>
+          <div class="input-box animation" style="--i: 18; --j: 1">
+            <br>
+            <label>Email de usuario</label>
+            <input id="usuarioR" type="text" required />
+          </div>
+          <div class="input-box animation" style="--i: 19; --j: 2">
+            <label>Confirmar Email</label>
+            <input id="usuarioCo" type="text" required />
+          </div>
+          <div class="input-box animation" style="--i: 20; --j: 3">
+            <label>Contraseña</label>
+            <input id="contraseñaR" type="password" required />
+          </div>
+          <div class="input-box animation" style="--i: 21; --j: 3">
+            <label>Confirmar contraseña</label>
+            <input id="contraseñaCo" type="password" required />
+          </div>
+          <br>
+          <button
+            type="submit"
+            class="boton"
+            onclick="event.preventDefault()"
+            id="registrarR"
+            style="--i: 21; --j: 4"
+          >
+            Registrarse
+          </button>
+          <div class="logreg-link animation" style="--i: 22; --j: 5">
+            <p>
+              Ya tienes una cuenta?
+              <a href="/index.html" class="login-link">Iniciar Sesion</a>
+            </p>
+          </div>
+        </form>
+      </div>
+      
+    <script type="module" src="/Controllers/authentication.js"></script>
+    <script type="module" src="/Controllers/script.js"></script>
+    <script type="module" src="/Controllers/register_user.js"></script>
+    
+</body>
+</html>

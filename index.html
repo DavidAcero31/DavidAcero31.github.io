@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>.::Iniciar Sesion::.</title>
+    <link rel="stylesheet" href="/CSS/index.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  </head>
+
+  <body background="/Resources/Img/imagen fondo.jpeg" >
+    <div class="container">
+      <div>
+        <form id="formreg" action="#">
+          <h2>Iniciar Sesión</h2>
+          <h5>Es rápido y fácil...</h5>
+            <div class="box">
+              <label for="email">Correo Electronico</label>
+              <input id="usuario" type="email" placeholder="Correo" required/> 
+            </div>
+            <div class="box">
+              <label for="password">Contraseña</label>
+              <input id="contraseña" type="password" placeholder="Contraseña" required />
+              <div style="font-size: 13px;">
+                  ¿Olvido su contraseña?
+                  <a href="/Templates/recovery.html">recuperar</a>
+                
+              </div>
+            </div>
+ 
+            <div>
+              <div>
+                <button type="submit" id="inicio" class="boton"> Iniciar sesión </button>
+              </div>
+
+            </div>
+            <div>
+              <br>
+              <button class="botongf" id="google" style="float: left;">
+                Iniciar con Google
+                <i class="bx bxl-google"></i>
+              </button>
+              <button class="botongf" id="facebook" style="float: right;">
+                Iniciar con facebook
+                <i class="bx bxl-facebook-circle"></i>
+              </button>
+            </div>
+            <div>
+              
+            </div>
+            
+            
+            <div class="logreg-link animation" style="--i: 4; --j: 25">
+              <p>
+                ¿No tienes cuenta?
+                <a href="/Templates/register.html" >Registrarse</a>
+              </p>
+            </div>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="/Controllers/authentication.js"></script>
+    <script type="module" src="/Controllers/loginGoogle.js"></script>
+    <script type="module" src="/Controllers/inFacebook.js"></script>
+  </body>
+</html>
