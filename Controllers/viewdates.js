@@ -23,7 +23,7 @@ async function cargar() {
         <th scope="row">${userData.identificacion}</th>
         <td>${userData.nombre}</td>
         <td>${userData.direccion}</td>
-        <td>${userData.Fecha}</td>
+        <td>${userData.fecha}</td>
         <td>${userData.email}</td>
         <td>${userData.telefono}</td>
         <td>
@@ -79,7 +79,7 @@ async function cargar() {
       document.getElementById('updateId').value = userId
       document.getElementById('updateNombre').value = userData.nombre
       document.getElementById('updateDireccion').value = userData.direccion
-      document.getElementById('updateRH').value = userData.Fecha
+      document.getElementById('updateRH').value = userData.fecha
       document.getElementById('updateEmail').value = userData.email
       document.getElementById('updateTelefono').value = userData.telefono
 
