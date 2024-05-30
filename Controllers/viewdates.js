@@ -23,7 +23,7 @@ async function cargar() {
         <th scope="row">${userData.identificacion}</th>
         <td>${userData.nombre}</td>
         <td>${userData.direccion}</td>
-        <td>${userData.RH}</td>
+        <td>${userData.Fecha}</td>
         <td>${userData.email}</td>
         <td>${userData.telefono}</td>
         <td>
@@ -79,7 +79,7 @@ async function cargar() {
       document.getElementById('updateId').value = userId
       document.getElementById('updateNombre').value = userData.nombre
       document.getElementById('updateDireccion').value = userData.direccion
-      document.getElementById('updateRH').value = userData.RH
+      document.getElementById('updateRH').value = userData.Fecha
       document.getElementById('updateEmail').value = userData.email
       document.getElementById('updateTelefono').value = userData.telefono
 
@@ -96,7 +96,7 @@ document
     const userId = document.getElementById('updateId').value
     const nombre = document.getElementById('updateNombre').value
     const direccion = document.getElementById('updateDireccion').value
-    const RH = document.getElementById('updateRH').value
+    const fecha = document.getElementById('updateRH').value
     const email = document.getElementById('updateEmail').value
     const telefono = document.getElementById('updateTelefono').value
 
@@ -106,7 +106,7 @@ document
       await actualizarDocumento(userDocRef, {
         nombre,
         direccion,
-        RH,
+        fecha,
         email,
         telefono,
       })

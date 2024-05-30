@@ -127,7 +127,7 @@ export const CrearDatos = (codigo, nombre, descripcion, cantidad) => {
 export const CrearUsuario = async (
   identificacion,
   nombre,
-  RH,
+  Fecha,
   direccion,
   telefono,
   email,
@@ -138,7 +138,7 @@ export const CrearUsuario = async (
     const docRef = await addDoc(collection(db, 'usuario'), {
       identificacion,
       nombre,
-      RH,
+      Fecha,
       direccion,
       telefono,
       email,
